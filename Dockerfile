@@ -1,8 +1,8 @@
-FROM erdii/nodejs-alpine-buildtools:6.9.1
+FROM node:12.18.3-alpine
 RUN mkdir /src
 
 WORKDIR /src
-RUN npm install rest-sessions@1.1.0 --production
+RUN npm install rest-sessions@2.0.1 --production
 
 EXPOSE 3000
 
